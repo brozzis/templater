@@ -1,0 +1,11 @@
+---
+- name: create directory
+  file:
+    path: tter
+    state: directory
+
+- name: copia file
+  copy:
+    src: x.sh
+    dest: tter/x.sh
+
